@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { ApplicationCommandPermissionType, Client, Events, GatewayIntentBits, Guild, GuildTextBasedChannel, TextBasedChannel, TextChannel } from "discord.js";
+import { Client, Events, GatewayIntentBits, GuildTextBasedChannel } from "discord.js";
 import { Collection, MongoClient } from 'mongodb';
 import type { Message as Message_t } from './types.js';
 
