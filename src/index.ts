@@ -74,7 +74,7 @@ async function saveMessagesBefore(db: Collection<Message_t>, channel: GuildTextB
         timestamp: new Date(message.createdTimestamp),
     }));
 
-    // await db.bulkWrite(messageArr.map(message => ({ insertOne: { document: message } })));
+    await db.bulkWrite(messageArr.map(message => ({ insertOne: { document: message } })));
     console.log(`Scraped until ${messageArr[0].timestamp.toLocaleString()}`);
 
     return saveMessagesBefore(db, channel, messageArr[messageArr.length - 1].message_id, messageArr.length + size);
