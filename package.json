@@ -1,0 +1,29 @@
+{
+  "name": "discord-scraper",
+  "version": "1.0.0",
+  "description": "Yet another Discord message scraper.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -p tsconfig.json && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ornato-t/discord-scraper.git"
+  },
+  "keywords": [
+    "discord",
+    "scrape",
+    "scraper"
+  ],
+  "author": "ornato-t",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ornato-t/discord-scraper/issues"
+  },
+  "homepage": "https://github.com/ornato-t/discord-scraper#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "type": "module"
+}
